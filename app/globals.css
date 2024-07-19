@@ -2,32 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+    font-family: '__Merienda_a6f5ae', '__Merienda_Fallback_a6f5ae';
+    font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.radial {
+    /* background: radial-gradient(circle at 50% 38%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(214, 106, 202, 1) 100%); */
+    background: radial-gradient(circle at 50% 36%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 220, 255, 1) 100%);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.glass {
+    /* background: rgba(25, 144, 255, 0.25); */
+    background-color: #09deff69;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@media screen and (min-width:420px) {
+    .radial {
+        /* background: radial-gradient(circle at 70% 58%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(214, 106, 202, 1) 100%); */
+        background: radial-gradient(circle at 70% 55%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 220, 255, 1) 100%);
+    }
 }

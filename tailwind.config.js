@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors")
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,6 +7,12 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      ...colors,
+      "primary": "#ff3377",
+      "secondary": "#f0c2e4",
+      "blue-primary": "#09deff"
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
