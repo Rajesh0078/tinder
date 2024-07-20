@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Login = () => {
@@ -7,7 +8,7 @@ const Login = () => {
                 <p className='text-[20px] font-medium'>Welcome Back !</p>
                 <p className='text-[14px] mt-2'>Sign in to continue to love capsule.</p>
             </div>
-            <form className='w-full mt-14 text-[13px]'>
+            <form className='w-full mt-11 text-[13px]'>
                 <div className='w-full'>
                     <p className='text-[14px]'>Email</p>
                     <div className='mt-2'>
@@ -27,11 +28,12 @@ const Login = () => {
                     <input type="checkbox" name="remember" id="remember" />
                     <label htmlFor="remember">Remember me</label>
                 </div>
-                <button type='submit' className='w-full mt-5 rounded bg-primary text-white h-9'>Login</button>
+                <button type='submit' className='w-full mt-5 rounded bg-primary text-white h-9'>Log In</button>
             </form>
-            <div className='my-5 text-sm'>
+            <div className='mt-5 mb-3 text-sm'>
                 or
             </div>
+            <p className='text-[14px]'>Don't have an account? <Link href={{ pathname: "/auth", query: { type: "register" } }} className='text-primary'>Register</Link></p>
         </div>
     )
 }
