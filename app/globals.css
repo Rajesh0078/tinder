@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: '__Merienda_a6f5ae', '__Merienda_Fallback_a6f5ae';
+    font-style: normal;
+}
+
+.radial {
+    /* background: radial-gradient(circle at 50% 38%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(214, 106, 202, 1) 100%); */
+    background: radial-gradient(circle at 50% 36%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 220, 255, 1) 100%);
+}
+
+.glass {
+    /* background: rgba(25, 144, 255, 0.25); */
+    background-color: #09deff69;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+@media screen and (min-width:420px) {
+    .radial {
+        /* background: radial-gradient(circle at 70% 58%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(214, 106, 202, 1) 100%); */
+        background: radial-gradient(circle at 70% 55%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 220, 255, 1) 100%);
+    }
+}
